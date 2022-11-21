@@ -6,10 +6,7 @@ import {
   useMemo,
 } from "react";
 import { KeyPressEntry } from "./keypad.types";
-import {
-  getKeypadPressHistory,
-  setKeypadPressHistory,
-} from "./keystorage.service";
+import { getKeypadPressHistory, setKeypadPressHistory } from "./keypad.utils";
 
 type KeyPressHistoryContext = {
   press: (value: string) => void;
