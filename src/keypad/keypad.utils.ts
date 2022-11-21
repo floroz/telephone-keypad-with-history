@@ -1,7 +1,5 @@
-import { useState, useCallback, useRef } from "react";
+import { KEYPAD_HISTORY_KEY } from "./keypad.const";
 import { KeyPressEntry } from "./keypad.types";
-
-const KEYPAD_HISTORY_KEY = "KEYPAD_HISTORY_KEY";
 
 export const getKeypadPressHistory = (): KeyPressEntry[] => {
   if (!window.localStorage) {
